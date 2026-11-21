@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Quabbin PC Repair</title>
+  <meta name="robots" content="noindex">
+  <!-- Favicon inlined so it works at any URL depth -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23315B49'/%3E%3Ccircle cx='14.5' cy='14.5' r='7' fill='none' stroke='%23F1F2ED' stroke-width='3'/%3E%3Cpath d='M19.5 19.5l5 5' stroke='%23F1F2ED' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #202B2A; color: #F1F2ED; font: 400 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; }
+    .code { font-family: ui-monospace, Menlo, monospace; color: #AAB9AF; letter-spacing: .14em; font-size: .8rem; }
+    h1 { font-size: clamp(1.8rem, 6vw, 2.6rem); margin: 12px 0; letter-spacing: -.02em; }
+    p { color: #AAB9AF; margin: 0 0 28px; }
+    a { display: inline-block; background: #315B49; color: #F1F2ED; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 999px; }
+    a:hover { background: #3A6B56; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">ERROR 404</p>
+    <h1>This page couldn’t be found</h1>
+    <p>The link may be old, or the address mistyped.</p>
+    <a href="/" data-home>Back to Quabbin PC Repair</a>
+  </main>
+  <script>
+    /* Point "Back" at the site's home page. That's "/" on a custom domain, but
+       "/repo-name/" on a GitHub Pages project URL (username.github.io/repo-name/).
+       If you know your sub-folder, set SITE_BASE (e.g. "/quabbin-pc-repair/") and skip the check. */
+    (function () {
+      var SITE_BASE = "/quabbin-pc-repair/";
+      var link = document.querySelector("[data-home]");
+      if (!link) return;
+      if (SITE_BASE) { link.setAttribute("href", SITE_BASE); return; }
+      var first = location.pathname.split("/")[1];
+      if (!first || !window.fetch) return;
+      // If this site's files exist under /first/, the site lives in that sub-folder.
+      var candidate = "/" + first + "/";
+      fetch(candidate + "js/config.js", { method: "HEAD", cache: "no-store" })
+        .then(function (res) { if (res.ok) link.setAttribute("href", candidate); })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>

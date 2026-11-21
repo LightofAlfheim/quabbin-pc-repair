@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lightofalfheim.github.io/quabbin-pc-repair/sitemap.xml
