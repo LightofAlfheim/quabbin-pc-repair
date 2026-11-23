@@ -87,14 +87,14 @@ The 404 page works out where the site lives on its own, so its "Back" link goes 
 
 ### Check the wording matches how you work
 
-- [ ] **Policies.** The privacy notice and repair authorization were written from what you've decided so far: diagnostics is $10, paid at drop-off, credited toward an approved repair, kept if the repair is declined, refunded if a diagnosis can't be done, with extensive troubleshooting charged extra only after the customer agrees, nothing beyond diagnosis without approval, extra work quoted first, no marketing use of personal data, no cookies or analytics. Read them through. In particular, confirm you're happy to commit to "kept only as long as needed" and "I don't look through your personal files".
+- [ ] **Policies.** The privacy notice and repair authorization were written from what you've decided so far: diagnostics is $10, paid at drop-off, credited toward an approved repair, kept if the repair is declined, refunded if a diagnosis can't be done (but not just because no fault was found), with extensive troubleshooting charged extra only after the customer agrees, nothing beyond diagnosis without approval, extra work quoted first, no marketing use of personal data, no cookies or analytics. Read them through. In particular, confirm you're happy to commit to "kept only as long as needed" and "I only access personal files when necessary for the requested repair".
 - [ ] **Policies you haven't decided yet, which aren't on the site:** how people pay, whether you ask for payment up front for parts, what happens to computers left uncollected, and whether you offer any guarantee on your work. Add them to the repair authorization list once you decide. Leave them out rather than guessing.
 - [ ] **If you ever add analytics or cookies**, update the "This website" line in the privacy notice.
 - [ ] This is plain-language information, not legal advice. If the business grows or registers, it's worth having someone check the policies.
 
 ### Other settings
 
-- [ ] **Phone (optional):** set `phone` only if you want it public. It stays hidden while empty.
+- [x] **Phone:** (774) 757-7601 is set in `js/config.js` and written into the contact section and structured data in `index.html`. Change all three if the number changes.
 - [ ] **Check the town list** in the Service area section. It currently lists the towns that border Barre (Hardwick, Petersham, Phillipston, Templeton, Hubbardston, Rutland, Oakham, New Braintree). Trim or extend to where you're actually willing to serve, and update `areaServed` in the `ld+json` block to match.
 - [ ] **Review the wording and prices.** The copy is written in the first person ("I fix…"). Check the price list, the handwritten notes, the About section and the FAQ so everything matches how you actually work.
 - [ ] **Once you have a domain:** in `index.html`'s `<head>`, add `<link rel="canonical" href="https://yourdomain/">`, add `<meta property="og:url" content="https://yourdomain/">`, and change `og:image` to the full URL `https://yourdomain/assets/og-image.png` (social sites need absolute URLs).

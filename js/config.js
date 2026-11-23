@@ -16,7 +16,7 @@ window.QPR_CONFIG = {
    * Optional phone number to show in the contact section.
    * Shown exactly as written here, e.g. "(978) 555-0100". Leave "" to hide it.
    */
-  phone: "",
+  phone: "(774) 757-7601",
 
   /**
    * Optional free form service endpoint (no backend of your own needed).
