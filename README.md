@@ -87,7 +87,7 @@ The 404 page works out where the site lives on its own, so its "Back" link goes 
 
 ### Check the wording matches how you work
 
-- [ ] **Policies.** The privacy notice and repair authorization were written from what you've decided so far: diagnostics is $10 and credited toward an approved repair, nothing beyond diagnosis without approval, extra work quoted first, no marketing use of personal data, no cookies or analytics. Read them through. In particular, confirm you're happy to commit to "kept only as long as needed" and "I don't look through your personal files".
+- [ ] **Policies.** The privacy notice and repair authorization were written from what you've decided so far: diagnostics is $10, paid at drop-off, credited toward an approved repair, kept if the repair is declined, refunded if a diagnosis can't be done, with extensive troubleshooting charged extra only after the customer agrees, nothing beyond diagnosis without approval, extra work quoted first, no marketing use of personal data, no cookies or analytics. Read them through. In particular, confirm you're happy to commit to "kept only as long as needed" and "I don't look through your personal files".
 - [ ] **Policies you haven't decided yet, which aren't on the site:** how people pay, whether you ask for payment up front for parts, what happens to computers left uncollected, and whether you offer any guarantee on your work. Add them to the repair authorization list once you decide. Leave them out rather than guessing.
 - [ ] **If you ever add analytics or cookies**, update the "This website" line in the privacy notice.
 - [ ] This is plain-language information, not legal advice. If the business grows or registers, it's worth having someone check the policies.
